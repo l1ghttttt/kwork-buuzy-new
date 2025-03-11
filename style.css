@@ -1,0 +1,131 @@
+body {                       /* Убираем отступы */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+h2, p {                           /* Убираем отступы текста */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.wrapper {     /* Стили для контейнера всех столбцов (делаем на весь экран и обрезаем лишнее) */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.column {
+    height: 100%;
+    display: flex;
+    width: calc(100vw / 6);              /* 6 - количество колонок */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+}
+
+.column-name {
+    font-size: 3.3vw;
+    text-align: center;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column-img {
+    width: 10vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.product-list {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divider {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.hide {
+    background-color: transparent;
+}
+.product {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-name {
+    width: 100%;
+    font-size: 1.4vw;
+    line-height: 1.6vw;
+    text-align: center;
+    margin-bottom: 0.15vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-price {
+    font-size: 1.65vw;
+}
+
+.gradient-yellow {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(255,245,0,1) 25%, rgba(83,80,0,1) 40%, rgba(0,0,0,1) 100%);
+}
+
+.gradient-orange {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(231,121,24,1) 25%, rgba(94,51,12,1) 40%, rgba(0,0,0,1) 100%);
+}
+
+.gradient-pink {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(220,87,132,1) 25%, rgba(110,26,54,1) 40%, rgba(0,0,0,1) 100%);
+}
+
+.gradient-purple {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(65,51,127,1) 25%, rgba(47,37,93,1) 40%, rgba(0,0,0,1) 100%);
+}
+
+.gradient-blue {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,78,117,1) 25%, rgba(0,78,117,1) 40%, rgba(0,0,0,1) 100%);
+}
+
+.gradient-green {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,147,69,1) 25%, rgba(0,81,38,1) 40%, rgba(0,0,0,1) 100%);
+}
