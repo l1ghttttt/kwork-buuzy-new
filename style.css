@@ -35,7 +35,7 @@ li {
 .column {
     height: 100%;
     display: flex;
-    width: calc(100vw / 6);              /* 6 - количество колонок */
+    width: 16.666666vw;              /* 6 - количество колонок */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
