@@ -39,13 +39,13 @@ li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 2vh;
+    gap: 1vh;
 }
 
 .column-name {
-    font-size: 3vw;
+    font-size: 2.2vw;
     text-align: center;
-    height: 16vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,12 +82,13 @@ li {
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    gap: 1vh;
 }
 
 .product-name {
     width: 100%;
-    font-size: 1.3vw;
-    line-height: 1.6vw;
+    font-size: 1.45vw;
+    line-height: 1.7vw;
     text-align: center;
     margin-bottom: 0.15vw;
     height: 6vh;
